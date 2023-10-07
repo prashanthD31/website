@@ -46,37 +46,28 @@ function toggleMode() {
     if(phoneInput.value.trim()=== ""){
         phoneError.innerHTML ='Phone Number is required'
         phoneInput.classList.add("is-invalid")
+        return false;
 
     }
     else{
         phoneError.innerHTML = "";
         phoneInput.classList.remove("is-invalid")
         
-    }
-    if
-    //   ((nameInput !== '')||(emailInput !== '')||(phoneInput!== ''));
-    (
-        nameInput.value.trim() == '' ||
-        emailInput.value.trim() == '' ||
-        phoneInput.value.trim() == ''
-      ) 
-    
-    {
     
             Swal.fire({
                 icon: 'success',
                 title: 'Success!',
                 
             });
-        }
-
-
+        
     }
- 
+}
+
+       
 
    
 
-    // return true;
+    //
 
     
 
